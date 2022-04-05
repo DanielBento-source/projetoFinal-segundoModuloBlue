@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+    <title>Detalhes</title>
+</head>
+
+<body>
+
+    <header>
+        <div id="div-header">
+            <div class="img-header">
+                <a href="/">
+                    <img class="img-cabeca" src="https://cdn-icons-png.flaticon.com/512/287/287226.png"
+                        alt="icone treinador pokemon">
+                </a>
+            </div>
+            <div id="h1">
+                <h1> Detalhes </h1>
+            </div>
+            <nav>
+                <ul>
+                    <a href="/">
+                        <li>inicio</li>
+                    </a>
+                    <a href="/criar">
+                        <li>criar</li>
+                    </a>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="div-main-editar">
+            <div class="container-detalhes">
+                <div class="container-img-editar">
+                    <img class="img-editar" src="<%= pokeTreinadores.img %> ">
+                </div>
+                <div class="div-detalhes">
+                    <h4> <%= pokeTreinadores.nome %></h4>
+
+                    <label for="descricao"> Descrição: </label>
+                    <span tyspane="text" nome="descricao"> <%= pokeTreinadores.descricao%> </span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

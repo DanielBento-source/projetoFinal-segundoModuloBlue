@@ -1,0 +1,23 @@
+<main>
+    <div class="div-main">
+        <% pokeTreinadores.forEach(element => { %>
+            <div class="poster-container">
+                <div class="container-img">
+                    <img class="img-poster" src="<%= element.img %> " alt="<%= element.nome %> ">
+                        <a href="/detalhes/<%= element.id %> " >
+                            <span> DETALHES </span>
+                        </a>
+                        <a href="/editar/<%= element.id %> ">
+                            <span> EDITAR </span>
+                        </a>
+                        <a href="/deletar/<%= element.id %> ">
+                            <span> APAGAR </span>
+                        </a>
+                </div>
+                <div class="container-title">
+                    <span class="span-nome"><%= element.nome %> </span>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+</main>
